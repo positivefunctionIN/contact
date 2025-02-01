@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="center-align">
+            My Contacts
+        </h1>
+        <input type="text" name="" id="filterinput" placeholder="search names..">
+        <ul id="names" class="collection with-header">
+            <li class="collection-header">
+                <h5>A</h5>
+            </li>
+            <li class="collection-item" onclick="showDetails('Anmol', 'anmol@gmail.com', '123-456-7890')">
+                <span class="contact-name" >Anmol</span>
+                    <input type="text" class="edit-input" style="display: none;" value="Abe">
+                <a href="#" class="secondary-content">
+                    <i class="material-icons edit-btn" onclick="editContact(this)">✏️</i>
+                     <!-- <i class="material-icons save-btn" style="display: none;" onclick="saveContact(this)">💾</i> -->
+                    <i class="material-icons delete-btn" onclick="deleteContact(this)">❌</i>
+                </a>
+                
+            </li>
+            <li class="collection-item" onclick="showDetails('Adam', 'adam@gmail.com', '987-654-3210')">
+                <span class="contact-name" >Adam</span>
+                <a href="#" class="secondary-content">
+                    <input type="text" class="edit-input" style="display: none;" value="Adam">
+                    <i class="material-icons edit-btn" onclick="editContact(this)">✏️</i>
+                     <!-- <i class="material-icons save-btn" style="display: none;" onclick="saveContact(this)">💾</i> -->
+                    <i class="material-icons delete-btn" onclick="deleteContact(this)">❌</i>
+                </a>
+
+            </li>
+            <li class="collection-item" onclick="showDetails('Ananaya', 'ananaya@gmail.com', '111-258-9210')">
+                <span class="contact-name" >Ananaya</span>
+                <input type="text" class="edit-input" style="display: none;" value="Ananaya">
+                <a href="#" class="secondary-content">
+                    <i class="material-icons edit-btn" onclick="editContact(this)">✏️</i>
+                     <!-- <i class="material-icons save-btn" style="display: none;" onclick="saveContact(this)">💾</i> -->
+                    <i class="material-icons delete-btn" onclick="deleteContact(this)">❌</i>
+                </a>
+
+            </li>
+            <li class="collection-header">
+                <h5>B</h5>
+            </li>
+            <li class="collection-item" onclick="showDetails('Brownie', 'Brownie@gmail.com', '887-654-3510')">
+                <span class="contact-name" >Brownie</span>
+                <input type="text" class="edit-input" style="display: none;" value="Brownie">
+                <a href="#" class="secondary-content">
+                    <i class="material-icons edit-btn" onclick="editContact(this)">✏️</i>
+                     <!-- <i class="material-icons save-btn" style="display: none;" onclick="saveContact(this)">💾</i> -->
+                    <i class="material-icons delete-btn" onclick="deleteContact(this)">❌</i>
+                </a>
+                
+            </li>
+            <li class="collection-item" onclick="showDetails('Bella', 'Bella@gmail.com', '657-144-3510')">
+                <span class="contact-name" >Bella</span>
+                <input type="text" class="edit-input" style="display: none;" value="Bella">
+                <a href="#" class="secondary-content">
+                    <i class="material-icons edit-btn" onclick="editContact(this)">✏️</i>
+                     <!-- <i class="material-icons save-btn" style="display: none;" onclick="saveContact(this)">💾</i> -->
+                    <i class="material-icons delete-btn" onclick="deleteContact(this)">❌</i>
+                </a>
+                
+            </li>
+            <li class="collection-item" onclick="showDetails('Bro', 'Bro@gmail.com', '222-854-0470')">
+                <span class="contact-name" >Bro</span>
+                <a href="#" class="secondary-content">
+                    <input type="text" class="edit-input" style="display: none;" value="Bro">
+                    <i class="material-icons edit-btn" onclick="editContact(this)">✏️</i>
+                     <!-- <i class="material-icons save-btn" style="display: none;" onclick="saveContact(this)">💾</i> -->
+                    <i class="material-icons delete-btn" onclick="deleteContact(this)">❌</i>
+                </a>
+
+            </li>
+            <li class="collection-item" onclick="showDetails('Brebb', 'Brebb@gmail.com', '369-741-8523')">
+                <span class="contact-name" >Brebb</span>
+                <input type="text" class="edit-input" style="display: none;" value="Brebb">
+                <a href="#" class="secondary-content">
+                    <i class="material-icons edit-btn" onclick="editContact(this)">✏️</i>
+                     <!-- <i class="material-icons save-btn" style="display: none;" onclick="saveContact(this)">💾</i> -->
+                    <i class="material-icons delete-btn" onclick="deleteContact(this)">❌</i>
+                </a>
+
+            </li>
+            <li class="collection-header">
+                <h5>C</h5>
+            </li>
+            <li class="collection-item" onclick="showDetails('Carrie', 'Carrie@gmail.com', '127-789-1254')">
+                <span class="contact-name" >Carrie</span>
+                <input type="text" class="edit-input" style="display: none;" value="Carrie">
+                <a href="#" class="secondary-content">
+                    <i class="material-icons edit-btn" onclick="editContact(this)">✏️</i>
+                     <!-- <i class="material-icons save-btn" style="display: none;" onclick="saveContact(this)">💾</i> -->
+                    <i class="material-icons delete-btn" onclick="deleteContact(this)">❌</i>
+                </a>
+
+            </li>
+            <li class="collection-item" onclick="showDetails('Catfish', 'Catfish@gmail.com', '785-621-4563')">
+                <span class="contact-name" >Catfish</span>
+                <input type="text" class="edit-input" style="display: none;" value="Catfish">
+                <a href="#" class="secondary-content">
+                    <i class="material-icons edit-btn" onclick="editContact(this)">✏️</i>
+                     <!-- <i class="material-icons save-btn" style="display: none;" onclick="saveContact(this)">💾</i> -->
+                    <i class="material-icons delete-btn" onclick="deleteContact(this)">❌</i>
+                </a>
+
+            </li>
+
+
+
+        </ul>
+    </div>
+    
+    <!-- <div class="overlay" onclick="closeDetails()"></div>
+    <div class="details-modal">
+        <h4 id="modal-name"></h4>
+        <p><strong>Email:</strong> <span id="modal-email"></span></p>
+        <p><strong>Phone:</strong> <span id="modal-phone"></span></p>
+        <button class="btn waves-effect waves-light" onclick="closeDetails()">Close</button>
+    </div> -->
+
+    <!-- Floating Action Button (FAB) -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red" onclick="openAddContactModal()">
+            <i class="large material-icons">add</i>
+        </a>
+    </div>
+
+    <!-- Modal for Contact Details -->
+    <div id="contactDetailsModal" class="modal">
+        <div class="modal-content">
+            <h4 id="contactName"></h4>
+            <p><strong>Email:</strong> <span id="contactEmail"></span></p>
+            <p><strong>Phone:</strong> <span id="contactPhone"></span></p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <!-- Modal for Adding/Editing Contact -->
+    <div id="addContactModal" class="modal">
+        <div class="modal-content">
+            <h4>Add/Edit Contact</h4>
+            <div class="input-field">
+                <input type="text" id="contactNameInput" placeholder="Name">
+            </div>
+            <div class="input-field">
+                <input type="email" id="contactEmailInput" placeholder="Email">
+            </div>
+            <div class="input-field">
+                <input type="tel" id="contactPhoneInput" placeholder="Phone">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="modal-close waves-effect waves-green btn-flat" onclick="saveContact()">Save</a>
+        </div>
+    </div>
+</div>
+
+
+    <script src="contact.js"></script>
+
+</body>
+
+</html>
